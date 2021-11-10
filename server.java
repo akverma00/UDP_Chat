@@ -32,15 +32,16 @@ class UDPChatServer {
         dis = new BufferedReader(new InputStreamReader(System.in));
         ia = InetAddress.getLocalHost();
         System.out.println(CLEAR);
-        System.out.println("Server is Running...");
+        printText(GREEN, "Server is Running...\n");
         while (true) {
             serversocket.receive(dp);
             String str = new String(dp.getData(), 0, dp.getLength());
             if (str.equals("STOP")) {
-                System.out.println("Terminated...");
+                printText(RED, "Terminated...\n");
                 break;
             }
-            System.out.println("Client: " + str);
+            printMessage("Client", YELLOW_BOLD, str + "\n");
+            printMessage("Server", YELLOW_BOLD, "");
             String str1 = new String(dis.readLine());
             buf = str1.getBytes();
             serversocket.send(new DatagramPacket(buf, str1.length(), ia, cport));

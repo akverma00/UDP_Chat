@@ -39,7 +39,7 @@ class UDPChatClient {
             String str = new String(dis.readLine());
             buf = str.getBytes();
             if (str.equals("STOP")) {
-                printText(RED, "Terminated...");
+                printText(RED, "Terminated...\n");
                 clientsocket.send(new DatagramPacket(buf, str.length(), ia, sport));
                 break;
             }
