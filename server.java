@@ -1,5 +1,5 @@
-import java.io.*;
-import java.net.*;
+import java.io.*; // Imported because we need the InputStream and OuputStream classes
+import java.net.*; // Imported because the Socket class is needed
 
 class UDPChatServer {
     public static DatagramSocket serversocket;
