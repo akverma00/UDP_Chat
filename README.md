@@ -28,7 +28,7 @@ In UDP, the client does not form a connection with the server like in TCP and in
 
 UDP header is as simple as its function.
 
-![](RackMultipart20211112-4-1xo35nd_html_af0e7e3e2f40730.jpg)
+![](HeaderImage.jpeg)
 
 UDP header contains four main parameters:
 
@@ -132,11 +132,11 @@ The entire codes can be broken down into the following steps :
 
 **Demo Images**
 
-![](RackMultipart20211112-4-1xo35nd_html_e52b72bdb714dfc7.png)
+![](ClientImage.jpeg)
 
 Client Terminal
 
-![](RackMultipart20211112-4-1xo35nd_html_7d67f7a376db6808.png)
+![](ServerImage.jpeg)
 
 Server Terminal
 
